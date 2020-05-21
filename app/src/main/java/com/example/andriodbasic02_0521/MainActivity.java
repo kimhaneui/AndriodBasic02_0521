@@ -33,8 +33,11 @@ public class MainActivity extends BaseActivity {
             @Override
             public void onClick(View v) {
                 String inputName = binding.nameEdt.getText().toString();
+                String inputBirth = binding.birthYear.getText().toString();
+
                 Intent intent = new Intent(mContext, UserActivity.class);
                 intent.putExtra("userName",inputName);
+                intent.putExtra("userBirth",Integer.parseInt(inputBirth));
                 startActivity(intent);
 
             }
