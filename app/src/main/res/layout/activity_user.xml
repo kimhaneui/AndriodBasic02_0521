@@ -9,6 +9,7 @@
         tools:context=".UserActivity">
 
         <TextView
+            android:id="@+id/userNameTxt"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
