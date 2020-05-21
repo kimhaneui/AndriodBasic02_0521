@@ -34,6 +34,7 @@ public class MainActivity extends BaseActivity {
             public void onClick(View v) {
                 String inputName = binding.nameEdt.getText().toString();
                 Intent intent = new Intent(mContext, UserActivity.class);
+                intent.putExtra("userName",inputName);
                 startActivity(intent);
 
             }
